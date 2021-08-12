@@ -1,0 +1,45 @@
+@media screen and (max-width: 1024px) {
+    #wrapper {
+        width: 100%;
+    }
+}
+
+/*Ipad dọc(768*1024)*/
+
+@media screen and (max-width: 768px) {
+    #wrapper{
+        width: 768px;
+    }
+    #main-menu {
+        display: block;
+    }
+    #edit-width{
+        width: 100%;
+    }
+    #product-item{
+        display: block;
+        height: fit-content;
+        background: none;
+    }
+    #product-item img
+    {
+        display: none;
+    }
+    #wp-content{
+        display: block;
+        width: 768px;
+    }
+    #main{
+        width: 100%;
+    }
+    .un-flex{
+        display: block;
+    }
+}
+
+
+/* @media screen and (max-width: 480px) {
+    #content, #sidebar {
+        width: 100%;
+    }
+} */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/dangnhap.css">
+    <title>BTL</title>
+</head>
+
+
+<body onload="setup()">
+    <div id="wrapper">
+
+
+
+        <div id="header">
+            <!-- 
+            <div class="container justify-content-between">
+
+                <div class="search-box">
+                    <form action="" onsubmit="return false">
+                        <input id="search" type="text" name="q" placeholder="Bạn muốn tìm gì?">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+
+            </div> -->
+
+            <div id="menu" class="container ">
+                <div>
+                    <ul id="main-menu" class="d-flex">
+                        <li class="active"><a href="index.html" id="backhome">Trang chủ</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul id="right-menu" class="d-flex">
+                        <li><a href="dangnhap.html">Đăng nhập</a></li>
+                        <li><a href="dangki.html">Đăng kí</a></li>
+                        <a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- dangnhap -->
+
+        <div class="container">
+            <div class="box">
+                <form class="login" onsubmit="return false">
+                    <div class="title">Đăng nhập</div>
+                    <label for="">Tên Đăng Nhập : </label>
+                    <br>
+                    <input type="text" placeholder="Nhập Tên Đăng Nhập" id="username">
+                    <br>
+                    <label for="">Mật Khẩu : </label>
+                    <br>
+                    <input type="password" placeholder="Nhập Mật Khẩu" id="password">
+                    <br>
+                    <input type="submit" value="Đăng Nhập" onclick="login()">
+                    <p>
+                        Bạn chưa có tài khoản ? <a href="dangki.html" class="color-exist "> Đăng Ký.</a></p>
+                </form>
+
+            </div>
+        </div>
+        <!-- Footer section -->
+        <div id="footer">
+            <div class="container">
+                <div class="box logo-footer">
+                    <div class="box-head">
+                        <h3>Liên hệ</h3>
+                    </div>
+                    <div class="box-body">
+                        <!-- 
+                                <img class="logo" src="assets/Image/logo.png" alt="">
+                            </a> -->
+                        <ul>
+                            <li>SDT : 028.7108.9666. </li>
+                            <li>Email : buyphone@gmail.com</li>
+                            <li>Địa chi : 30 Phan Đình Giót - Thanh Xuân - Hà Nội</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box about-us">
+                    <div class="box-head">
+                        <h3>Về chúng tôi</h3>
+                    </div>
+                    <div class="box-body">
+                        <li>Giới thiệu về công ty</li>
+                        <li>Câu hỏi thường gặp mua hàng</li>
+                        <li>Chính sách bảo mật</li>
+                        <li>Kiểm tra hóa đơn điện tử</li>
+                        <li>Tra cứu thông tin bảo hành</li>
+                    </div>
+                </div>
+                <div class="box follow-us">
+                    <div class="box-head">
+                        <h3>Theo dõi</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul class="list-social d-flex justify-content-betwen">
+                            <li>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fab fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end footer -->
+        <div id="wp-copyright">
+            <div class="container justify-content-between">
+                <p class="copyright">© BuyPhone - Công Ty Bán Lẻ Điện thoại </p>
+
+            </div>
+
+        </div>
+        <!-- end of footer section -->
+
+        </main>
+        <!-- end of main -->
+
+
+        <div id="cart-container">
+            <p id="cart-title">Giỏ hàng</p id="cart-title">
+
+            <div id="empty-cart">
+                <h1>Your Cart is Empty...</h1>
+                <a href="index.html">Tiếp tục mua sắm</a>
+            </div>
+
+            <div id="cart-with-items">
+                <div class="cart-column">
+                    <h3>Sản phẩm </h3>
+                    <h3>Tên sản phẩm</h3>
+                    <h3>Thành tiền </h3>
+                    <h3>Số lượng</h3>
+                    <h3>Xóa</h3>
+                </div>
+                <div id="item-body">
+                </div>
+                <div id="total">
+                    <h3 id="total-items"></h3>
+                    <h2 id="total-amount"></h2>
+                    <h3 id="you-saved"></h3>
+                </div>
+            </div>
+            <img src="./assets/image/89.jpg" alt="image" class="logo" id="logo">
+
+        </div>
+    </div>
+
+    <script src="assets/js/dangnhap.js"></script>
+
+    <script src="assets/js/home.js"></script>
+</body>
+
+</html>
